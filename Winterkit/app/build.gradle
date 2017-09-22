@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 26
@@ -32,6 +33,14 @@ dependencies {
     //about
     compile 'com.github.jrvansuita:MaterialAbout:0.1.6'
 
+    //Animation
+    compile 'com.daimajia.easing:library:2.1@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    apt 'com.jakewharton:butterknife-compiler:8.8.1'
+
     //Code Generator/Scanner
     compile group: 'com.google.zxing', name: 'core', version: '3.3.0'
     compile 'com.journeyapps:zxing-android-embedded:3.5.0'
@@ -49,11 +58,28 @@ dependencies {
 
     //image
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.4.7'
+
+    //layout
+    compile 'org.sufficientlysecure:html-textview:3.4'
 
     //logging
     compile 'com.orhanobut:logger:2.1.1'
 
+    //recyclerview extensions
+    compile 'com.github.rubensousa:gravitysnaphelper:1.3'
+    compile 'com.simplecityapps:recyclerview-fastscroll:1.0.16'
+
+    //sensors
+    compile 'com.github.nisrulz:sensey:1.7.0'
+
     //web
     compile 'com.squareup.okhttp3:okhttp:3.9.0'
     compile 'com.google.code.gson:gson:2.8.2'
+    debugCompile 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    //other
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'joda-time:joda-time:2.9.9'
 }
