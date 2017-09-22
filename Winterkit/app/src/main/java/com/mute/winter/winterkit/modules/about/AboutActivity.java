@@ -67,7 +67,7 @@ public class AboutActivity extends AppCompatActivity {
                 .setShowAsCard(true)
                 .build();
 
-        LinearLayout root = findViewById(R.id.root);
+        LinearLayout root = (LinearLayout) findViewById(R.id.root);
         root.addView(aboutView);
     }
 }

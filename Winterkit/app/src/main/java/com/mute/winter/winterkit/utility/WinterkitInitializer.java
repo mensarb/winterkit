@@ -15,7 +15,7 @@ import okhttp3.OkHttpClient;
  * @since 30.05.2017.
  */
 
-public class ApplicationInitializer {
+public class WinterkitInitializer {
 
     private boolean isDebug = true;
     private OkHttpClient client;

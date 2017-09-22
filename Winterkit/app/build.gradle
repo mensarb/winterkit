@@ -29,8 +29,23 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
+    //about
+    compile 'com.github.jrvansuita:MaterialAbout:0.1.6'
+
+    //Code Generator/Scanner
+    compile group: 'com.google.zxing', name: 'core', version: '3.3.0'
+    compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+
     //events
     compile 'org.greenrobot:eventbus:3.0.0'
+
+    //Google Analytics
+    compile 'com.google.android.gms:play-services-analytics:11.4.0'
+
+    //GoogleMaps
+    compile 'com.google.android.gms:play-services-maps:11.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.5'
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
 
     //image
     compile 'com.squareup.picasso:picasso:2.5.2'
@@ -41,13 +56,4 @@ dependencies {
     //web
     compile 'com.squareup.okhttp3:okhttp:3.9.0'
     compile 'com.google.code.gson:gson:2.8.2'
-
-    //about
-    compile 'com.github.jrvansuita:MaterialAbout:0.1.6'
-
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:26.0.1'
-    testCompile 'junit:junit:4.12'
 }
