@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Winterkit</string>
+
+    <!-- about -->
+    <string name="about_name">dominik</string>
+    <string name="about_job">Mobile Developer</string>
+    <string name="about_brief">I make Android stuff</string>
+    <string name="about_playstore">2151202</string>
+    <string name="about_github">mensarb</string>
+    <string name="about_bitbucket">mensarb</string>
+    <string name="about_facebook"></string>
+    <string name="about_twitter"></string>
+    <string name="about_instagram"></string>
+    <string name="about_google_plus"></string>
+    <string name="about_youtube"></string>
+    <string name="about_dribble"></string>
+    <string name="about_linkedin"></string>
+    <string name="about_email"></string>
+    <string name="about_whatsapp"></string>
+    <string name="about_skype"></string>
+    <string name="about_google"></string>
+    <string name="about_android"></string>
+    <string name="about_website"></string>
+    <string name="about_feedback_email"></string>
 </resources>
