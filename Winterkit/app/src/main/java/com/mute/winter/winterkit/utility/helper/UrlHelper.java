@@ -16,4 +16,8 @@ public class UrlHelper {
         }
         return null;
     }
+
+    public boolean isImage(String url){
+        return url.contains(".png") || url.contains(".jpg") || url.contains(".jpeg");
+    }
 }
