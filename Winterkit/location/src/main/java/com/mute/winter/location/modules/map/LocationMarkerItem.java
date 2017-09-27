@@ -1,4 +1,4 @@
-package com.mute.winter.winterkit.modules.map;
+package com.mute.winter.location.modules.map;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;

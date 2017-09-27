@@ -1,4 +1,4 @@
-package com.mute.winter.winterkit.modules.map;
+package com.mute.winter.location.modules.map;
 
 import android.content.Intent;
 import android.location.Location;

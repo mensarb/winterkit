@@ -1,4 +1,4 @@
-package com.mute.winter.winterkit.modules.map;
+package com.mute.winter.location.modules.map;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.mute.winter.winterkit.R;
+import com.mute.winter.location.R;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 /**

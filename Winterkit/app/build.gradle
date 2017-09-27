@@ -47,11 +47,6 @@ dependencies {
     //Google Analytics
     compile 'com.google.android.gms:play-services-analytics:11.4.0'
 
-    //GoogleMaps
-    compile 'com.google.android.gms:play-services-maps:11.4.0'
-    compile 'com.google.maps.android:android-maps-utils:0.5'
-    compile 'com.sothree.slidinguppanel:library:3.3.1'
-
     //image
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.4.7'
@@ -76,6 +71,5 @@ dependencies {
     releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.1.0'
 
     //other
-    compile 'com.android.support:multidex:1.0.1'
     compile 'joda-time:joda-time:2.9.9'
 }
