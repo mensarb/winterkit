@@ -1,4 +1,4 @@
-package com.mute.winter.location.modules.map;
+package com.mute.winter.winterkit.modules.map;
 
 import android.annotation.TargetApi;
 import android.content.Context;

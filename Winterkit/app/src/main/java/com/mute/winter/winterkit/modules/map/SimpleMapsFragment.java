@@ -1,4 +1,4 @@
-package com.mute.winter.location.modules.map;
+package com.mute.winter.winterkit.modules.map;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.mute.winter.location.R;
+import com.mute.winter.winterkit.R;
 
 /**
  * @author dkoller
