@@ -81,7 +81,12 @@ public class PermissionHelper {
             WRITE_EXTERNAL_STORAGE
     };
 
+    private static final String[] EXTERNAL_STORAGE_PERMISSIONS = {
+            WRITE_EXTERNAL_STORAGE
+    };
+
     private static final int PERMISSION_CAMERA_ID = 30;
+    private static final int PERMISSION_WRITE_EXTERNAL_STORAGE = 31;
 
     public static boolean isCameraPermitted(Context context){
         return isPermitted(context, CAMERA);
@@ -93,6 +98,10 @@ public class PermissionHelper {
 
     public static boolean isWriteExternalStoragePermitted(Context context){
         return isPermitted(context, WRITE_EXTERNAL_STORAGE);
+    }
+
+    public static void requestWriteExternalStoragePermissions(Activity activity){
+        requestPermission(activity, EXTERNAL_STORAGE_PERMISSIONS, PERMISSION_WRITE_EXTERNAL_STORAGE);
     }
 
     /**
