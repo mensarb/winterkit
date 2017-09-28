@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply from: '../dependencies.gradle'
 
 repositories {
     google()
@@ -9,18 +10,17 @@ repositories {
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -35,5 +35,5 @@ dependencies {
     compile project(':core')
 
     //Google Analytics
-    compile 'com.google.android.gms:play-services-analytics:11.4.0'
+    compile 'com.google.android.gms:play-services-analytics:' + versions.playServiceLib
 }
