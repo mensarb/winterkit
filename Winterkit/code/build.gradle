@@ -1,12 +1,10 @@
 apply plugin: 'com.android.library'
 apply from: '../dependencies.gradle'
 
-repositories {
-    google()
-    jcenter()
-    mavenCentral()
-
-    maven { url "https://jitpack.io" }
+ext {
+    PUBLISH_GROUP_ID = 'com.mensarb.winterkit'
+    PUBLISH_ARTIFACT_ID = 'code'
+    PUBLISH_VERSION = versions.publishVersion
 }
 
 android {
@@ -19,6 +17,11 @@ android {
         targetSdkVersion versions.compileSdk
         versionCode versions.publishVersionCode
         versionName versions.publishVersion
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
 
     buildTypes {

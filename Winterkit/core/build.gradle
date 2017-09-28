@@ -9,6 +9,12 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'com.mensarb.winterkit'
+    PUBLISH_ARTIFACT_ID = 'core'
+    PUBLISH_VERSION = versions.publishVersion
+}
+
 android {
 
     compileSdkVersion versions.compileSdk
@@ -19,6 +25,11 @@ android {
         targetSdkVersion versions.compileSdk
         versionCode versions.publishVersionCode
         versionName versions.publishVersion
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
 
     buildTypes {
