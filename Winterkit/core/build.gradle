@@ -1,5 +1,14 @@
 apply plugin: 'com.android.library'
 
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+
+    maven { url "https://jitpack.io" }
+}
+
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
@@ -9,9 +18,6 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
