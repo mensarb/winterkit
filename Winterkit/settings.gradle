@@ -1,1 +1,1 @@
-include ':app', ':core', ':location'
+include ':core', ':location', ':analytics', ':code', ':bluetooth', ':web'
