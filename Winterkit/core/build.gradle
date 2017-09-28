@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply from: '../dependencies.gradle'
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+
+    maven { url "https://jitpack.io" }
+}
+
+ext {
+    PUBLISH_GROUP_ID = 'com.mensarb.winterkit'
+    PUBLISH_ARTIFACT_ID = 'core'
+    PUBLISH_VERSION = versions.publishVersion
+}
+
+android {
+
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:support-v4:' +versions.playServiceLib
+
+    compile 'joda-time:joda-time:2.9.9'
+    compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.google.code.gson:gson:2.8.2'
+
+    //events
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //about
+    compile 'com.github.jrvansuita:MaterialAbout:0.1.6'
+}
