@@ -1,5 +1,7 @@
 package com.mute.winter.core.utility;
 
+import android.app.Application;
+
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.LogAdapter;
@@ -13,32 +15,27 @@ import com.orhanobut.logger.PrettyFormatStrategy;
 
 public class WinterkitInitializer {
 
+    private Application app;
     private boolean isDebug = true;
 
-    public void init(boolean isDebug){
+    public void init(Application app, boolean isDebug){
+        this.app = app;
         this.isDebug = isDebug;
-        initLogger();
+
+        initLogger(app);
     }
 
-    private void initLogger(){
+    private void initLogger(Application app){
         FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
-                .showThreadInfo(false)  // (Optional) Whether to show thread info or not. Default true
-                .methodCount(0)         // (Optional) How many method line to show. Default 2
-                //.methodOffset(7)        // (Optional) Hides internal method calls up to offset. Default 5
-                //.logStrategy(customLog) // (Optional) Changes the log strategy to print out. Default LogCat
-                //.tag("My custom tag")   // (Optional) Global tag for every log. Default PRETTY_LOGGER
+                .showThreadInfo(false)
+                .methodCount(0)
+                .tag(app.getString(app.getApplicationInfo().labelRes))
                 .build();
-        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
 
-        Logger.addLogAdapter(new LogAdapter() {
+        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy) {
             @Override
-            public boolean isLoggable(int i, String s) {
+            public boolean isLoggable(int priority, String tag) {
                 return isDebug;
-            }
-
-            @Override
-            public void log(int i, String s, String s1) {
-
             }
         });
     }
