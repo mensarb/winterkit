@@ -1,6 +1,14 @@
 apply plugin: 'com.android.library'
 apply from: '../dependencies.gradle'
 
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+
+    maven { url "https://jitpack.io" }
+}
+
 ext {
     PUBLISH_GROUP_ID = 'com.mensarb.winterkit'
     PUBLISH_ARTIFACT_ID = 'core'
