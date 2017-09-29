@@ -5,7 +5,7 @@
     <string name="about_name">dominik</string>
     <string name="about_job">Mobile Developer</string>
     <string name="about_brief">I make Android stuff</string>
-    <string name="about_playstore">2151202</string>
+    <string name="about_playstore">03741561794711238707</string>
     <string name="about_github">mensarb</string>
     <string name="about_bitbucket">mensarb</string>
     <string name="about_facebook"></string>
@@ -22,4 +22,13 @@
     <string name="about_android"></string>
     <string name="about_website"></string>
     <string name="about_feedback_email"></string>
+
+    <!-- debug advertisement ids -->
+    <string name="ad_mob_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_demo_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_demo_interstital_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_demo_rewarded_video_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="ad_demo_native_advanced_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="ad_demo_native_express_small_id">ca-app-pub-3940256099942544/2793859312</string>
+    <string name="ad_demo_native_express_large_id">ca-app-pub-3940256099942544/2177258514</string>
 </resources>

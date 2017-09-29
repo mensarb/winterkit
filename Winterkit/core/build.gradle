@@ -35,15 +35,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.android.support:support-v4:' +versions.playServiceLib
-
-    //butterknife
-    compile 'com.jakewharton:butterknife:' + versions.butterknife
-    annotationProcessor 'com.jakewharton:butterknife-compiler:' + versions.butterknife
-
-    //dagger
-    annotationProcessor  "com.google.dagger:dagger-compiler:" + versions.dagger
-    compile "com.google.dagger:dagger:" + versions.dagger
+    //android support libraries
+    compile 'com.android.support:appcompat-v7:' + versions.supportLib
+    compile 'com.android.support:recyclerview-v7:' + versions.supportLib
 
     //datetime
     compile 'joda-time:joda-time:2.9.9'

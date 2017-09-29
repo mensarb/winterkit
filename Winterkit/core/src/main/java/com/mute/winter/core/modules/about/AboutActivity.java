@@ -31,7 +31,7 @@ public class AboutActivity extends AppCompatActivity {
                 .setDividerDashGap(5)
 
                 .setLinksColumnsCount(4)
-                //.addGooglePlayStoreLink(getResources().getString(R.string.about_playstore))
+                .addGooglePlayStoreLink(getResources().getString(R.string.about_playstore))
                 .addGitHubLink(getResources().getString(R.string.about_github))
                 .addBitbucketLink(getResources().getString(R.string.about_bitbucket))
                 //.addFacebookLink(getResources().getString(R.string.about_facebook))
@@ -68,7 +68,7 @@ public class AboutActivity extends AppCompatActivity {
                 .setShowAsCard(true)
                 .build();
 
-        LinearLayout root = (LinearLayout) findViewById(R.id.root);
+        LinearLayout root = findViewById(R.id.root);
         root.addView(aboutView);
     }
 }
