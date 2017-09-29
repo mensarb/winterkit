@@ -9,5 +9,9 @@ ext.versions = [
         gradlePlugin      : '2.3.3',
 
         supportLib        : '26.0.2',
-        playServiceLib    : '11.4.0'
+        playServiceLib    : '11.4.0',
+
+        butterknife       : '8.8.1',
+        moxy              : '1.5.3',
+        dagger            : '2.11',
 ]
