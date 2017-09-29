@@ -37,14 +37,6 @@ dependencies {
 
     compile 'com.android.support:support-v4:' +versions.playServiceLib
 
-    //butterknife
-    compile 'com.jakewharton:butterknife:' + versions.butterknife
-    annotationProcessor 'com.jakewharton:butterknife-compiler:' + versions.butterknife
-
-    //dagger
-    annotationProcessor  "com.google.dagger:dagger-compiler:" + versions.dagger
-    compile "com.google.dagger:dagger:" + versions.dagger
-
     //datetime
     compile 'joda-time:joda-time:2.9.9'
 
