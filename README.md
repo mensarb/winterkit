@@ -1,5 +1,7 @@
 # winterkit
 
+#dont use this for important stuff
+
 
 # Gradle Dependency
 
@@ -21,6 +23,15 @@ Step 2. Add the dependency
 ```gradle
 dependencies {
 	// ... other dependencies here
-    compile 'com.github.mensarb:winterkit:{version}'
+
+    compile 'com.github.mensarb.winterkit:core:{version}'
+    
+    //optional
+    compile 'com.github.mensarb.winterkit:analytics:{version}'
+    compile 'com.github.mensarb.winterkit:bluetooth:{version}'
+    compile 'com.github.mensarb.winterkit:code:{version}'
+    compile 'com.github.mensarb.winterkit:location:{version}'
+    compile 'com.github.mensarb.winterkit:navigation:{version}'
+    compile 'com.github.mensarb.winterkit:web:{version}'
 }
 ```
