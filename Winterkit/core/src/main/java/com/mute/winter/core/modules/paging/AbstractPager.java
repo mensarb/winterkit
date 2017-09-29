@@ -13,7 +13,6 @@ import java.util.List;
  * @author dkoller
  * @since 13.10.2016
  */
-// TODO: 27.09.2017 move to kit
 public abstract class AbstractPager {
 
     protected int pageNumber;
