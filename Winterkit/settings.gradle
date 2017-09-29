@@ -1,1 +1,1 @@
-include ':core', ':location', ':analytics', ':code', ':bluetooth', ':web'
+include ':core', ':location', ':analytics', ':code', ':bluetooth', ':web', ':navigation'

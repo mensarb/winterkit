@@ -3,7 +3,7 @@ apply from: '../dependencies.gradle'
 
 ext {
     PUBLISH_GROUP_ID = 'com.mensarb.winterkit'
-    PUBLISH_ARTIFACT_ID = 'web'
+    PUBLISH_ARTIFACT_ID = 'navigation'
     PUBLISH_VERSION = versions.publishVersion
 }
 
@@ -37,6 +37,11 @@ dependencies {
 
     compile project(':core')
 
-    //web client
-    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    //mvp moxy
+    compile "com.arello-mobile:moxy:" + versions.moxy
+    compile "com.arello-mobile:moxy-app-compat:" + versions.moxy
+    provided "com.arello-mobile:moxy-compiler:" + versions.moxy
+
+    //cicerone
+    compile 'ru.terrakok.cicerone:cicerone:2.1.0'
 }
