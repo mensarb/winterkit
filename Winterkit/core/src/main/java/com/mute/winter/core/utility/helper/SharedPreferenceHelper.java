@@ -2,6 +2,7 @@ package com.mute.winter.core.utility.helper;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 import java.util.Set;
 
@@ -68,5 +69,11 @@ public class SharedPreferenceHelper {
         SharedPreferences.Editor editor = settings.edit();
         editor.clear();
         editor.apply();
+    }
+
+    public static boolean isSettingEnabled(Application app, int id, boolean defaultValue){
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(app);
+        String key = app.getString(id);
+        return sharedPref.getBoolean(key, defaultValue);
     }
 }
