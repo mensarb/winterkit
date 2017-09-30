@@ -33,7 +33,7 @@ public class AboutActivity extends AppCompatActivity {
                 .setLinksColumnsCount(4)
                 .addGooglePlayStoreLink(getResources().getString(R.string.about_playstore))
                 .addGitHubLink(getResources().getString(R.string.about_github))
-                .addBitbucketLink(getResources().getString(R.string.about_bitbucket))
+                //.addBitbucketLink(getResources().getString(R.string.about_bitbucket))
                 //.addFacebookLink(getResources().getString(R.string.about_facebook))
                 //.addTwitterLink(getResources().getString(R.string.about_twitter))
                 //.addInstagramLink(getResources().getString(R.string.about_instagram))
@@ -54,7 +54,7 @@ public class AboutActivity extends AppCompatActivity {
 
                 .setActionsColumnsCount(2)
                 .addFiveStarsAction()
-                .addMoreFromMeAction("")
+                .addMoreFromMeAction(getResources().getString(R.string.about_google_dev_name))
                 .addShareAction(R.string.app_name)
                 .addUpdateAction()
                 //.addFeedbackAction(getResources().getString(R.string.about_feedback_email))
