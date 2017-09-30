@@ -7,7 +7,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
 
+        <!-- about -->
         <activity android:name="com.mute.winter.core.modules.about.AboutActivity"/>
+
+        <!-- private policy -->
+        <activity android:name=".modules.private_policy.PrivatePolicyActivity"/>
 
     </application>
 
