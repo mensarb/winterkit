@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">core</string>
 
+    <string name="private_policy_url">https://github.com/mensarb/private-policy/blob/master/README.md</string>
+
     <!-- about -->
     <string name="about_name">dominik</string>
     <string name="about_job">Mobile Developer</string>
