@@ -1,4 +1,5 @@
 # winterkit
+[![](https://jitpack.io/v/mensarb/winterkit.svg)](https://jitpack.io/#mensarb/winterkit)
 
 #dont use this for important stuff
 
