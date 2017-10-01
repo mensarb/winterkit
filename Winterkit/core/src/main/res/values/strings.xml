@@ -4,10 +4,11 @@
     <string name="private_policy_url">https://github.com/mensarb/private-policy/blob/master/README.md</string>
 
     <!-- about -->
-    <string name="about_name">dominik</string>
+    <string name="about_name">mensarb</string>
     <string name="about_job">Mobile Developer</string>
     <string name="about_brief">I make Android stuff</string>
-    <string name="about_playstore">03741561794711238707</string>
+    <string name="about_playstore">8966968486365453332</string>
+    <string name="about_google_dev_name">mensarb</string>
     <string name="about_github">mensarb</string>
     <string name="about_bitbucket">mensarb</string>
     <string name="about_facebook"></string>
