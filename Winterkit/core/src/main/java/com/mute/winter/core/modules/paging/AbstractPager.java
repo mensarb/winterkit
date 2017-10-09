@@ -71,7 +71,7 @@ public abstract class AbstractPager {
         loadFirstPage();
     }
 
-    private boolean triggerNextPage(){
+    public boolean triggerNextPage(){
         return !isLoading && !isLastPage;
     }
 
@@ -79,14 +79,14 @@ public abstract class AbstractPager {
         return triggerNextPage(linearLayoutManager, getItemCount());
     }
 
-    public boolean triggerNextPage(LinearLayoutManager linearLayoutManager, int variablePageSize){
-        if (linearLayoutManager == null){
+    public boolean triggerNextPage(LinearLayoutManager manager, int variablePageSize){
+        if (manager == null){
             return false;
         }
 
-        int visibleItemCount = linearLayoutManager.getChildCount();
-        int totalItemCount = linearLayoutManager.getItemCount();
-        int firstVisibleItemPosition = linearLayoutManager.findFirstVisibleItemPosition();
+        int visibleItemCount = manager.getChildCount();
+        int totalItemCount = manager.getItemCount();
+        int firstVisibleItemPosition = manager.findFirstVisibleItemPosition();
 
         return triggerNextPage()
                 && (visibleItemCount + firstVisibleItemPosition) >= totalItemCount

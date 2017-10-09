@@ -46,6 +46,7 @@ dependencies {
     //android support libraries
     compile 'com.android.support:appcompat-v7:' + versions.supportLib
     compile 'com.android.support:recyclerview-v7:' + versions.supportLib
+    compile 'com.android.support:multidex:' + versions.multidexLib
 
     //datetime
     compile 'joda-time:joda-time:2.9.9'
