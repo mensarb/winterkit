@@ -37,6 +37,6 @@ dependencies {
 
     compile project(':core')
 
-    //web client
-    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.squareup.retrofit2:retrofit:' + versions.retrofit
+    compile 'com.squareup.retrofit2:converter-gson:' + versions.retrofit
 }

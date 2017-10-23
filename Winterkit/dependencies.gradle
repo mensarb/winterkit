@@ -4,8 +4,8 @@ ext.versions = [
          */
         minSdk            : 19,
         compileSdk        : 26,
-        buildTools        : '26.0.2',
-        gradlePlugin      : '2.3.3',
+        buildTools        : '26.0.2', //https://developer.android.com/studio/releases/build-tools.html
+        gradlePlugin      : '2.3.3', //https://developer.android.com/studio/releases/gradle-plugin.html
 
         /**
          * App
@@ -16,8 +16,8 @@ ext.versions = [
         /**
          * Google Libs
          */
-        supportLib        : '26.0.1',
-        playServiceLib    : '11.4.0',
+        supportLib        : '26.0.1', //https://developer.android.com/topic/libraries/support-library/revisions.html
+        playServiceLib    : '11.4.2', //https://developers.google.com/android/guides/releases
         multidexLib       : '1.0.1',
 
         /**
@@ -25,6 +25,7 @@ ext.versions = [
          */
         butterknife       : '8.8.1',
         moxy              : '1.5.3',
-        dagger            : '2.11',
+        dagger            : '2.12',
         parceler          : '1.1.9',
+        retrofit          : '2.3.0'
 ]
