@@ -4,13 +4,8 @@ ext.versions = [
          */
         minSdk            : 19,
         compileSdk        : 26,
-<<<<<<< HEAD
-        buildTools        : '26.0.2',
-        gradlePlugin      : '3.0.0',
-=======
         buildTools        : '26.0.2', //https://developer.android.com/studio/releases/build-tools.html
-        gradlePlugin      : '2.3.3', //https://developer.android.com/studio/releases/gradle-plugin.html
->>>>>>> origin/develop
+        gradlePlugin      : '3.0.0', //https://developer.android.com/studio/releases/gradle-plugin.html
 
         /**
          * App
@@ -32,12 +27,8 @@ ext.versions = [
         moxy              : '1.5.3',
         dagger            : '2.12',
         parceler          : '1.1.9',
-<<<<<<< HEAD
         retrofit          : '2.3.0',
         leakcanary        : '1.5.1',
         deeplinkdispatch  : '3.1.1',
-        okhttp_chuck      : '1.1.0'
-=======
-        retrofit          : '2.3.0'
->>>>>>> origin/develop
+        okhttp_chuck      : '1.1.0',
 ]

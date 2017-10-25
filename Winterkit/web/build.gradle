@@ -37,11 +37,6 @@ dependencies {
 
     api project(':core')
 
-<<<<<<< HEAD
     api 'com.squareup.retrofit2:retrofit:' + versions.retrofit
     api 'com.squareup.retrofit2:converter-gson:' + versions.retrofit
-=======
-    compile 'com.squareup.retrofit2:retrofit:' + versions.retrofit
-    compile 'com.squareup.retrofit2:converter-gson:' + versions.retrofit
->>>>>>> origin/develop
 }
