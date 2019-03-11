@@ -42,11 +42,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    //android support libraries
-    compile 'com.android.support:appcompat-v7:' + versions.supportLib
-    compile 'com.android.support:recyclerview-v7:' + versions.supportLib
-
+    
     //datetime
     compile 'joda-time:joda-time:2.10.1'
 
