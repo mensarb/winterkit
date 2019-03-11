@@ -28,7 +28,6 @@ dependencies {
     compile 'com.github.mensarb.winterkit:core:{version}'
     
     //optional
-    compile 'com.github.mensarb.winterkit:analytics:{version}'
     compile 'com.github.mensarb.winterkit:bluetooth:{version}'
     compile 'com.github.mensarb.winterkit:code:{version}'
     compile 'com.github.mensarb.winterkit:location:{version}'
