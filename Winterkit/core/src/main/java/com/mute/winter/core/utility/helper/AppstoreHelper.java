@@ -2,7 +2,9 @@ package com.mute.winter.core.utility.helper;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
+
 
 /**
  * @author dkoller

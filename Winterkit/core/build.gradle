@@ -41,20 +41,23 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Android Support Libraries
+    implementation 'com.android.support:design:' + versions.androidXDesign
+
     //datetime
-    compile 'joda-time:joda-time:2.10.1'
+    api 'joda-time:joda-time:2.10.1'
 
     //json serialization
-    compile 'com.google.code.gson:gson:2.8.2'
+    api 'com.google.code.gson:gson:2.8.2'
 
     //about
-    compile 'com.github.jrvansuita:MaterialAbout:0.1.8'
+    implementation 'com.github.jrvansuita:MaterialAbout:0.1.8'
 
     //events
-    compile 'org.greenrobot:eventbus:3.1.1'
+    api 'org.greenrobot:eventbus:3.1.1'
 
     //logging
-    compile 'com.orhanobut:logger:2.2.0'
+    api 'com.orhanobut:logger:2.2.0'
 }

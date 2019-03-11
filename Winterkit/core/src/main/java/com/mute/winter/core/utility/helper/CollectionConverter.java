@@ -1,11 +1,11 @@
 package com.mute.winter.core.utility.helper;
 
-import android.support.annotation.NonNull;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
 
 /**
  * @author dkoller

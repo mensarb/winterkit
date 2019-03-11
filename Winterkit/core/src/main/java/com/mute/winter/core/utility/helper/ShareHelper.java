@@ -2,7 +2,8 @@ package com.mute.winter.core.utility.helper;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 /**
  * @author dkoller

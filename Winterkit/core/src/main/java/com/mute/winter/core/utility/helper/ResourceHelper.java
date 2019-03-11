@@ -2,8 +2,10 @@ package com.mute.winter.core.utility.helper;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.res.ResourcesCompat;
+
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
+
 
 /**
  * @author dkoller

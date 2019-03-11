@@ -2,11 +2,12 @@ package com.mute.winter.core.modules.private_policy;
 
 import android.app.ActionBar;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 
 import com.mute.winter.core.R;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 /**

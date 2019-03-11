@@ -1,11 +1,18 @@
 ext.versions = [
+
         /**
+         * =========================================================================================
          * Build
+         * https://developer.android.com/about/dashboards/index.html
+         *
+         * https://developer.android.com/studio/releases/build-tools.html
+         * https://developer.android.com/studio/releases/gradle-plugin.html
+         * =========================================================================================
          */
-        minSdk            : 19,
-        compileSdk        : 26,
-        buildTools        : '26.0.2',
-        gradlePlugin      : '2.3.3',
+        minSdk            : 21,
+        compileSdk        : 28,
+        buildTools        : '28.0.3',
+        gradlePlugin      : '3.2.1',
 
         /**
          * App
@@ -14,17 +21,113 @@ ext.versions = [
         publishVersionCode: 1,
 
         /**
-         * Google Libs
+         * =========================================================================================
+         * Google PlayService
+         *
+         * https://developers.google.com/android/guides/setup
+         * https://developers.google.com/android/guides/releases
+         * =========================================================================================
          */
-        supportLib        : '26.0.1',
-        playServiceLib    : '11.4.0',
-        multidexLib       : '1.0.1',
+
+        googleServices          : '4.2.0',
+
+        googleAccountLogin      : '16.0.1',
+        googleActions           : '16.1.0',
+        googleSignIn            : '16.0.0',
+        googleAnalytics         : '16.0.6',
+        googleAwareness         : '16.0.0',
+        googleCast              : '16.1.2',
+        googleCloudMessaging    : '16.0.0',
+        googleDrive             : '16.0.0',
+        googleFit               : '16.0.1',
+        googleLocation          : '16.0.0',
+        googleMaps              : '16.0.0',
+        googleMobileAds         : '17.1.2',
+        googlePlaces            : '16.0.0',
+        googleMobileVision      : '15.0.2',
+        googleNearby            : '16.0.0',
+        googlePanoramaViewer    : '16.0.0',
+        googlePlayGameServices  : '16.0.0',
+        googleSafetyNet         : '16.0.0',
+        googlePay               : '16.0.0',
+        googleWear              : '16.0.1',
 
         /**
-         * 3rd party libs
+         *  ========================================================================================
+         *  AndroidX Library
+         *
+         *  https://developer.android.com/jetpack/androidx/releases/
+         *  =========================================================================================
          */
-        butterknife       : '8.8.1',
-        moxy              : '1.5.3',
-        dagger            : '2.11',
-        parceler          : '1.1.9',
+
+        androidXCoreUtils               : '1.0.0',
+        androidXMultidex                : '2.0.1',
+        androidXAppCompat               : '1.1.0-alpha01',
+        androidXCardView                : '1.0.0',
+        androidXRecyclerView            : '1.1.0-alpha02',
+        androidXDesign                  : '1.0.0-rc01',
+        androidXConstraintLayout        : '2.0.0-alpha2',
+        androidXExifInterface           : '1.0.0',
+
+        /**
+         *  ========================================================================================
+         *  Android Architecture
+         *
+         *  https://developer.android.com/topic/libraries/architecture/adding-components
+         *
+         *  https://developer.android.com/jetpack/docs/release-notes
+         *  =========================================================================================
+         */
+
+        architectureXLifecycle             : '2.0.0-rc01',
+        architectureXRoom                  : '2.0.0-rc01',
+        architectureXPaging                : '2.1.0',
+        architectureXNavigation            : '1.0.0-rc02',
+        architectureXWorkmanager           : '1.0.0-beta02',
+
+        /**
+         * =========================================================================================
+         * Firebase
+         *
+         * https://firebase.google.com/docs/android/setup
+         * https://firebase.google.com/support/release-notes/android#latest_sdk_versions
+         * =========================================================================================
+         */
+
+        firebasePlugins                  : '1.1.5',
+
+        firebaseCore                     : '16.0.7',
+        firebaseAds                      : '17.1.3',
+        firebaseAnalytics                : '16.3.0',
+        firebaseAppIndexing              : '17.1.0',
+        firebaseAuth                     : '16.1.0',
+        firebaseFirestore                : '18.1.0',
+        firebaseFunctions                : '16.2.0',
+        firebaseMessaging                : '17.3.4', //17.4.0
+        firebaseStorage                  : '16.1.0',
+        firebaseCrashReporting           : '16.2.1',
+        firebaseCrashlytics              : '2.9.9',
+        firebaseDynamicLinks             : '16.1.7',
+        firebaseInvites                  : '16.1.0',
+        firebaseInappMessaging           : '17.1.0',
+        firebaseInappMessagingDisplay    : '17.1.0',
+        firebaseMlModelInterpreter       : '17.0.3',
+        firebaseMlVision                 : '19.0.2',
+        firebaseMlImageLabeling          : '17.0.2',
+        firebasePerf                     : '16.2.3',
+        firebaseDatabase                 : '16.1.0',
+        firebaseConfig                   : '16.3.0',
+
+        /**
+         * =========================================================================================
+         * Other Libraries
+         * =========================================================================================
+         */
+
+        butterknife             : '10.1.0',        //http://jakewharton.github.io/butterknife/
+        dagger                  : '2.21',          //https://github.com/google/dagger/releases
+        deeplinkdispatch        : '4.1.0',         //https://github.com/airbnb/DeepLinkDispatch/releases
+        parceler                : '1.1.12',        //https://github.com/johncarl81/parceler/releases
+        picasso                 : '2.71828',       //http://square.github.io/picasso/
+        retrofit                : '2.5.0'         //http://square.github.io/retrofit/
 ]
