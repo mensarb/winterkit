@@ -48,7 +48,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:' + versions.supportLib
 
     //datetime
-    compile 'joda-time:joda-time:2.9.9'
+    compile 'joda-time:joda-time:2.10.1'
 
     //json serialization
     compile 'com.google.code.gson:gson:2.8.2'
@@ -57,8 +57,8 @@ dependencies {
     compile 'com.github.jrvansuita:MaterialAbout:0.1.8'
 
     //events
-    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.greenrobot:eventbus:3.1.1'
 
     //logging
-    compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.orhanobut:logger:2.2.0'
 }
