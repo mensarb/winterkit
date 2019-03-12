@@ -25,7 +25,7 @@ Step 2. Add the dependency
 dependencies {
 	// ... other dependencies here
 
-    implementation 'com.github.mensarb.winterkit:core:{version}'
+    implementation 'com.github.mensarb:winterkit:{version}'
 
 }
 ```
