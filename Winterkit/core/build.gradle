@@ -44,13 +44,10 @@ dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
 
     //Android Support Libraries
-    implementation 'com.android.support:design:' + versions.androidXDesign
+    implementation 'com.google.android.material:material:1.0.0'
 
     //datetime
-    api 'joda-time:joda-time:2.10.1'
-
-    //json serialization
-    api 'com.google.code.gson:gson:2.8.2'
+    api 'joda-time:joda-time:2.10.3'
 
     //about
     implementation 'com.github.jrvansuita:MaterialAbout:0.1.8'

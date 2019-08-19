@@ -7,4 +7,10 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
+    <color name="backgroundGrey">#fafafa</color>
+    <color name="backgroundGreyDark">#ECECEC</color>
+
+    <color name="success">#76b72a</color>
+    <color name="failure">#dc5a5a</color>
+
 </resources>
