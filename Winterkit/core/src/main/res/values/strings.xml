@@ -18,13 +18,13 @@
     <string name="about_youtube"></string>
     <string name="about_dribble"></string>
     <string name="about_linkedin"></string>
-    <string name="about_email"></string>
+    <string name="about_email">mensarb.dev@gmail.com</string>
     <string name="about_whatsapp"></string>
     <string name="about_skype"></string>
     <string name="about_google"></string>
     <string name="about_android"></string>
     <string name="about_website"></string>
-    <string name="about_feedback_email"></string>
+    <string name="about_feedback_email">mensarb.dev@gmail.com</string>
 
     <!-- debug advertisement ids -->
     <string name="ad_mob_id">ca-app-pub-3940256099942544~3347511713</string>
